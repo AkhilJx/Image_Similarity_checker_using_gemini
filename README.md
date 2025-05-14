@@ -2,6 +2,8 @@
 
 A Streamlit web application that compares two images using Google's Gemini 1.5 Pro model, providing a similarity score and detailed justification for the result.
 
+***********************************************************************************************************************************************
+
 ## Features
 
 - **Dual Image Upload**: Upload two images for comparison
@@ -9,6 +11,8 @@ A Streamlit web application that compares two images using Google's Gemini 1.5 P
 - **AI-Powered Analysis**: Uses Gemini 1.5 Pro for intelligent image comparison
 - **Detailed Results**: Provides both a similarity score (0-100%) and a textual justification
 - **User-Friendly Interface**: Clean, intuitive UI built with Streamlit
+
+***********************************************************************************************************************************************
 
 ## How It Works
 
@@ -20,18 +24,27 @@ A Streamlit web application that compares two images using Google's Gemini 1.5 P
    - A detailed explanation of the comparison
 5. Results are displayed to the user in a clean format
 
+***********************************************************************************************************************************************
+
 ## Supported Image Formats
 
 - JPEG/JPG
 - PNG
 - Many other formats can also be included if needed, like WEBP, GIF (first frame will be used), BMP etc 
 
+***********************************************************************************************************************************************
+
 ## Implementation
 
 streamlit run app.py
+
 Open your browser to the provided local address (typically http://localhost:8501)
+
 Upload two images using the file uploaders
+
 View your similarity results!
+
+***********************************************************************************************************************************************
 
 ## Example Output
 
@@ -45,6 +58,7 @@ show about 80% similarity due to some variations in peripheral objects.
 
 ![image](https://github.com/user-attachments/assets/b0104bc8-c22d-4fa2-a514-e21b556c8d2d)
 
+***********************************************************************************************************************************************
 
 ## Requirements
 
@@ -58,6 +72,8 @@ python-dotenv
 
 Pillow (for image processing)
 
+***********************************************************************************************************************************************
+
 ## Limitations
 
 Large images may take longer to process
@@ -65,6 +81,8 @@ Large images may take longer to process
 Very dissimilar images may receive generic justifications
 
 Abstract art/complex images may not compare as accurately
+
+***********************************************************************************************************************************************
 
 ## Future Possibilities
 
