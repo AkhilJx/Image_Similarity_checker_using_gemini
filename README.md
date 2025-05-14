@@ -24,56 +24,29 @@ A Streamlit web application that compares two images using Google's Gemini 1.5 P
 
 - JPEG/JPG
 - PNG
-- WEBP
-- GIF (first frame will be used)
-- BMP
+- Many other formats can also be included if needed, like WEBP, GIF (first frame will be used), BMP etc 
 
-## Installation
+## Implementation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/image-similarity-checker.git
-   cd image-similarity-checker
-Install dependencies:
-
-bash
-pip install -r requirements.txt
-Set up your Google API key:
-
-Create a .env file in the project root
-
-Add your Gemini API key:
-
-GEMINI_API_KEY=your_api_key_here
-Usage
-Run the Streamlit app:
-
-bash
 streamlit run app.py
 Open your browser to the provided local address (typically http://localhost:8501)
-
 Upload two images using the file uploaders
-
 View your similarity results!
 
-Configuration
-You can modify the following aspects of the application:
+## Example Output
 
-Similarity Prompt: Edit the prompt.txt file to change how Gemini evaluates similarity
-
-Thresholds: Adjust score thresholds for different similarity levels
-
-UI: Modify the Streamlit interface in app.py
-
-Example Output
 Similarity Score: 85%
-
 Justification:
 The two images show very similar compositions with the same subjects in nearly identical positions. 
 The color palette and lighting are virtually the same, though there are minor differences in 
 the background details. The main subjects match about 90% of features, while the backgrounds 
 show about 80% similarity due to some variations in peripheral objects.
-Requirements
+
+![image](https://github.com/user-attachments/assets/b0104bc8-c22d-4fa2-a514-e21b556c8d2d)
+
+
+## Requirements
+
 Python 3.8+
 
 Streamlit
@@ -84,9 +57,15 @@ python-dotenv
 
 Pillow (for image processing)
 
-Limitations
+## Limitations
+
 Large images may take longer to process
 
 Very dissimilar images may receive generic justifications
 
 Abstract art/complex images may not compare as accurately
+
+## Future Possibilities
+
+Can make use of face detection tools like Huggingface models or Google Mediapipe library to verify that the user uploaded image has a face in it.
+ 
