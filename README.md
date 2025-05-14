@@ -36,6 +36,7 @@ View your similarity results!
 ## Example Output
 
 Similarity Score: 85%
+
 Justification:
 The two images show very similar compositions with the same subjects in nearly identical positions. 
 The color palette and lighting are virtually the same, though there are minor differences in 
